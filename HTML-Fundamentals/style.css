@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  position: relative;
+  border-top: 5px solid #1098ad;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+h1 {
+  padding: 20px 50px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  position: relative;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  line-height: 1.5;
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding: 5px 1px;
+}
+li {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+article header p {
+  font-style: italic;
+}
+aside {
+  background-color: #f7f7f7;
+  border-bottom: 5px solid #1098ad;
+  border-top: 5px solid #1098ad;
+  margin-bottom: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  position: relative;
+  /* width: 200px; */
+}
+.aside-posts {
+  padding: 40px 10px;
+}
+.main-header {
+  background-color: #f7f7f7;
+  height: 80px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.related {
+  list-style: none;
+  /* position: relative; */
+}
+.main-header ul {
+  list-style: none;
+}
+/* nav a:link {
+  display: inline-block;
+} */
+ul,
+ol {
+  margin-left: 20px;
+}
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  margin-bottom: 20px;
+}
+/* article li:last-child {
+  color: aquamarine;
+} */
+/* Styling the links LVHA */
+nav a:link {
+  color: #1098ad;
+  font-size: 16px;
+  padding-right: 30px;
+  display: inline-block;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: dotted;
+}
+a:active {
+  background-color: #444;
+}
+
+#copyright {
+  color: #777;
+}
+.copyright {
+  color: palevioletred;
+}
+.text {
+  color: yellowgreen;
+}
+footer {
+  color: purple;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.like {
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 60px;
+
+  right: 60px;
+}
+/* .post-header {
+  position: relative;
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: rgb(255, 196, 0);
+  color: #444;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 17px;
+  position: absolute;
+  top: -10px;
+  right: -28px;
+}
+
+aside::before {
+  content: "Posts";
+  background-color: rgb(255, 196, 0);
+  font-weight: bold;
+
+  padding: 5px;
+  position: absolute;
+  right: -25px;
+  top: 15px;
+}
+.related-img {
+  width: 100px;
+  height: auto;
+}
+/* .author-img {
+  float: left;
+}
+.author {
+  float: left;
+  margin-bottom: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+  margin-top: 37px;
+}
+.container {
+  width: 1000px;
+}
+article {
+  width: 600px;
+  float: left;
+}
+.aside-posts {
+  width: 220px;
+  float: right;
+  padding: 25px;
+  margin-top: 40px;
+  margin-left: 0px;
+  /* box-sizing: border-box; */
+/* }
+footer {
+  clear: both;
+}
+.related img {
+  padding-right: 60px;
+/* } */
+/* FLEX */
+/* .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.related-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.related-author {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.related-text {
+  font-size: 21px;
+  color: #1098ad;
+  font-weight: bold;
+}
+
+.box {
+  display: flex;
+  gap: 50px;
+}
+article {
+  width: 750px;
+}
+aside {
+  width: 310px;
+  height: 380px;
+} */
+
+/* GRID */
+.main-header {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+nav {
+  margin-top: 30px;
+}
+.box {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  grid-template-columns: 1 / span 2;
+  gap: 70px;
+}
+.related-box {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 20px;
+}
+.related-author {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.related-text {
+  font-size: 21px;
+  color: #1098ad;
+  font-weight: bold;
+}
+.author-box {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  margin-bottom: 20px;
+}
+aside {
+  height: 350px;
+}
